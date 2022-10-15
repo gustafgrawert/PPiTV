@@ -1,0 +1,42 @@
+<!DOCTYPE html><html>
+    <head><link href="https://fonts.googleapis.com/css?family=Istok+Web&display=swap" rel="stylesheet" />
+        <link href="./css2/main.css" rel="stylesheet" /><title>Document</title>
+    </head>
+    <body>
+        <div class="v2_30"><div class="v2_31"></div>
+        <div class="v2_32"></div>
+        <div class="v2_33"></div>
+        <div class="v2_34"></div>
+        <div class="v2_35"></div>
+       
+        <div class="v2_37"></div>
+       
+        <a href="index.html" target="_blank">
+            <div class="v2_34"></div>
+                      
+
+        </a>
+       
+        <div class="container" id="imgBox">
+   
+            <input  type="file" accept="image/*" name="image" id="file" style="display: none" onchange="loadFile(event)">
+            <label for="file"><img src="images1/upload.png" class="upload-icon" ></label>
+        
+        </div>
+        
+        <script>
+            var imgBox = document.getElementById("imgBox");
+    
+            var loadFile = function(event){
+                imgBox.style.backgroundImage = "url(" + URL.createObjectURL(event.target.files[0]) +  ")";
+    
+            }
+    
+        </script>
+    
+        
+        
+       
+    
+</body>
+</html>
